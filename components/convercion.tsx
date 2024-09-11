@@ -35,10 +35,10 @@ const Convercion = () => {
     };
     return (
         <div>
-        <div className='bg-[#040438] rounded-xl m-8 mb-2 pb-1'>
+        <div className='bg-[#040438] rounded-xl m-4 mb-2 pb-1 md:min-w-[450px] md:m-0'>
             <div className='flex justify-center py-4'>
-                <FontAwesomeIcon icon={faTrophy} className='text-white' />
-                <span className='text-white text-sm font-semibold pl-4'>
+                <FontAwesomeIcon icon={faTrophy} className='text-white mx-1' />
+                <span className='text-white text-xs font-semibold ml-2'>
                     Cambia al instante con todos los bancos en Perú
                 </span>
             </div>
