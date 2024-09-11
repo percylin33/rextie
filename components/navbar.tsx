@@ -39,7 +39,7 @@ const Navbar = () => {
         <nav className="bg-white p-4 relative" id='inicio'>
             <div className="flex justify-between items-center">
                 {/* Imagen a la izquierda */}
-                <div className="flex-shrink-0 ml-20">
+                <div className="flex-shrink-0 xl:ml-20">
                     <Image src={logo1} alt="logo1" height={35}  className="xl:w-20"/>
                 </div>
 
