@@ -5,7 +5,7 @@ import { faMessage } from "@fortawesome/free-solid-svg-icons";
 
 const FloatingButtons = () => {
   return (
-    <div className="fixed bottom-5 right-5 flex flex-col items-center space-y-4 z-50">
+    <div className="fixed bottom-5 right-5 flex flex-col items-center space-y-4 z-10">
       {/* Botón de WhatsApp */}
       <a
         href="https://wa.me/123456789" // Cambia el número al tuyo
