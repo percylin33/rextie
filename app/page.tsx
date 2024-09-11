@@ -3,6 +3,7 @@ import Business from "@/components/business";
 import ButtonInicio from "@/components/button-inicio";
 import Carousel from "@/components/carousel";
 import Comentarios from "@/components/comentarios";
+import FloatingButtons from "@/components/floatingButtons";
 import Lider from "@/components/lider";
 import Medios from "@/components/medios";
 import Playtrores from "@/components/play-strores";
@@ -21,6 +22,7 @@ export default function Home() {
       <Medios />
       <Playtrores />
       <ButtonInicio />
+      <FloatingButtons />
     </div>
   );
 }
