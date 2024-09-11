@@ -19,7 +19,7 @@ const Navbar = () => {
     };
 
     return (
-        <nav className="bg-white p-4 relative">
+        <nav className="bg-white p-4 relative" id='inicio'>
             <div className="flex justify-between items-center">
                 {/* Imagen a la izquierda */}
                 <div className="flex-shrink-0">
