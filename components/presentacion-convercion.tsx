@@ -6,9 +6,12 @@ interface Props {}
 
 const PresentacionConvercion: NextPage<Props> = ({}) => {
   return (
-    <div className='md:flex justify-around'>
+    <div className=' xl:flex justify-center  mt-5 '>
+      <div className='xl:w-[80%] xl:flex justify-center xl:justify-between gap-10'>
         <Presentacion />
         <Convercion/>
+
+      </div>
         
     </div>
   )

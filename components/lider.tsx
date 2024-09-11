@@ -9,7 +9,7 @@ const Lider = () => {
         <div className="mt-8">
             <p className="text-[#0032ff] text-2xl font-extrabold text-center">Somos la casa de cambio online líder del Perú</p>
             <div className="p-4">
-                <div className="flex overflow-x-auto scrollbar-hidden space-x-4">
+                <div className="flex overflow-x-auto scrollbar-hidden space-x-4 lg:justify-center">
                     <div className="min-w-[150px]  shadow-lg rounded p-4 pb-8 bg-[#eff2ff]">
                         <div className=" flex justify-center my-3">
                         <Image src={money} alt="maney" width={52} />

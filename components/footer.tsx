@@ -47,9 +47,13 @@ const Footer = () => {
                             />
                         </div>
                         <ul className={`mb-8 md:block ${openLists.services ? 'block' : 'hidden'}`}>
-                            <li className="py-1"><a href="#">Enlace 1</a></li>
-                            <li className="py-1"><a href="#">Enlace 2</a></li>
-                            <li className="py-1"><a href="#">Enlace 3</a></li>
+                            <li className="py-1"><p className="text-sm text-gray-500 font-semibold">Rextie Business</p></li>
+                            <li className="py-1"><p className="text-sm text-gray-500 font-semibold">Rextie Factoring</p></li>
+                            <li className="py-1"><p className="text-sm text-gray-500 font-semibold">Confirming</p></li>
+                            <li className=" py-2 flex items-center"><p className="text-sm text-gray-500 font-semibold">
+                            Visa</p>
+                            <span className="bg-orange-400 text-white text-xs font-semibold rounded px-2 py-1 ml-2">Nuevo</span>
+                        </li>
                         </ul>
                     </div>
 
@@ -68,9 +72,12 @@ const Footer = () => {
                             />
                         </div>
                         <ul className={`md:block ${openLists.resources ? 'block' : 'hidden'}`}>
-                            <li className="py-1"><a href="#">Enlace 4</a></li>
-                            <li className="py-1"><a href="#">Enlace 5</a></li>
-                            <li className="py-1"><a href="#">Enlace 6</a></li>
+                            <li className="py-1"><p className="text-sm text-gray-500 font-semibold">Blog</p></li>
+                            <li className="py-1"><p className="text-sm text-gray-500 font-semibold">Tipo de cambio</p></li>
+                            <li className="py-1"><p className="text-sm text-gray-500 font-semibold">App para cambiar dolares</p></li>
+                            <li className="py-1"><p className="text-sm text-gray-500 font-semibold">Camio de Dolar a Soles</p></li>
+                            <li className="py-1"><p className="text-sm text-gray-500 font-semibold">Precio de Dolar</p></li>
+                            <li className="py-1"><p className="text-sm text-gray-500 font-semibold">Dolar<p/></p></li>
                         </ul>
                     </div>
 
@@ -89,9 +96,12 @@ const Footer = () => {
                             />
                         </div>
                         <ul className={`mb-8 md:block ${openLists.support ? 'block' : 'hidden'}`}>
-                            <li className="py-1"><a href="#">Enlace 7</a></li>
-                            <li className="py-1"><a href="#">Enlace 8</a></li>
-                            <li className="py-1"><a href="#">Enlace 9</a></li>
+                            <li className="py-1"><p className="text-sm text-gray-500 font-semibold">Preguntas frecuentes</p> </li>
+                            <li className="py-1"><p className="text-sm text-gray-500 font-semibold">Como cambiar dolares con REXTIE</p></li>
+                            <li className="py-1"><p className="text-sm text-gray-500 font-semibold">Terminos y Condiciones</p></li>
+                            <li className="py-1"><p className="text-sm text-gray-500 font-semibold">Politica de Cookies</p></li>
+                            <li className="py-1"><p className="text-sm text-gray-500 font-semibold">Politica de Privacidad</p></li>
+                            <li className="py-1"><p className="text-sm text-gray-500 font-semibold">Mapa del sitio</p></li>
                         </ul>
                     </div>
                     <div>

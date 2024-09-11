@@ -18,12 +18,29 @@ const Navbar = () => {
         setIsServicesOpen(!isServicesOpen);
     };
 
-    return (
+    return (<div>
+        <div className="hidden xl:block ml-20">
+                    <ul className="flex  w-auto p-4 space-x-7  ">
+                        <li
+                            onClick={() => handleClick(0)}
+                            className={` text-[#000096] font-extrabold text-lg  pb-0 cursor-pointer border-b-4 ${activeIndex === 0 ? 'border-orange-500 font-extrabold' : 'border-transparent'}`}
+                        >
+                            Personas
+                        </li>
+                        <li
+                            onClick={() => handleClick(1)}
+                            className={` text-[#000096] font-extrabold text-lg  pb-0 cursor-pointer border-b-4 ${activeIndex === 1 ? 'border-orange-500 font-extrabold' : 'border-transparent'}`}
+                        >
+                            Empresas
+                        </li>
+                    </ul>
+                </div>
+    
         <nav className="bg-white p-4 relative" id='inicio'>
             <div className="flex justify-between items-center">
                 {/* Imagen a la izquierda */}
-                <div className="flex-shrink-0">
-                    <Image src={logo1} alt="logo1" height={35} />
+                <div className="flex-shrink-0 ml-20">
+                    <Image src={logo1} alt="logo1" height={35}  className="xl:w-20"/>
                 </div>
 
                 {/* Botones centrados */}
@@ -33,7 +50,7 @@ const Navbar = () => {
                 </div>
 
                 {/* Menú hamburguesa a la derecha (solo móvil) */}
-                <div className="md:hidden">
+                <div className="xl:hidden">
                     <button
                         onClick={() => setOpen(!open)}
                         className="text-[#0024b3] text-2xl"
@@ -120,6 +137,7 @@ const Navbar = () => {
                 </div>
             </div>
         </nav>
+        </div>
     );
 };
 
