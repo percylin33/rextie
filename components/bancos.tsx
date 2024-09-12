@@ -16,8 +16,8 @@ const Bancos = () => {
         <div>
             <h1 className="text-center mt-8 mb-4 font-extrabold text-2xl text-[#181861] md:text-4xl">Cambia al instante con todos los bancos en Perú</h1>
             <div>
-                <div className="xl:flex justify-center" >
-                    <div>
+                <div className="lg:flex flex-row-reverse justify-center" >
+                    <div className="lg:w-[600px]">
                         <div className="rounded-t-xl bg-[#040438] mx-2 flex justify-center ">
                             <FontAwesomeIcon icon={faStar} className="text-white" />
                             <p className="text-white text-center font-semibold text-sm">Nuevo beneficio</p>
@@ -45,13 +45,13 @@ const Bancos = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="rounded-xl  border-2 mx-2 flex flex-col mt-2 p-2 md:mt-6 md:p-4 ">
+                    <div className="rounded-xl  border-2 mx-2 flex flex-col mt-2 p-2 md:mt-6 md:p-4 lg:w-[600px]">
                         <div className="md:flex justify-center space-x-4">
-                            <div className=" flex justify-center flex-col">
+                            <div className=" flex justify-center flex-col lg:py-6">
                                 <span className="font-extrabold text-center text-[#181861] text-xl md:text-2xl">15 min.</span>
                                 <p className="text-center text-[#181861] font-semibold text-sm ">Transferencias inmediatas a todo el Perú</p>
                             </div>
-                            
+
 
                         </div>
                         <div className="grid grid-cols-2 md:flex md:justify-center gap-4 md:grid-cols-1 place-items-center mt-5">
@@ -65,7 +65,6 @@ const Bancos = () => {
                         </div>
                     </div>
                 </div>
-                <div></div>
             </div>
         </div>)
 }

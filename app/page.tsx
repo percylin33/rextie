@@ -13,12 +13,12 @@ import PresentacionConvercion from "@/components/presentacion-convercion";
 export default function Home() {
   return (
     <div className="md:bg-transparent">
-      <div className="flex items-center justify-center min-h-screen">
+      <div className="flex items-center justify-center h-auto my-20">
         <div className="md:w-[80%] items-center">
           <PresentacionConvercion />
-          <Bancos />
         </div>
       </div>
+          <Bancos />
       <Business />
       <Lider />
       <Carousel />

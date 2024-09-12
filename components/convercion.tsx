@@ -1,10 +1,11 @@
 "use client"
-import { faTrophy, faRotate, faPiggyBank } from "@fortawesome/free-solid-svg-icons"
+import { faTrophy, faRotate } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Image from "next/image";
 import { useState } from 'react';
 import peru from "@/public/peru.png"
 import eeuu from "@/public/estados-unidos.png"
+import pig from "@/public/icons/icon-ping.png"
 
 
 
@@ -36,7 +37,7 @@ const Convercion = () => {
     return (
         <div className=" xl:w-[50%]">
             <div className="flex justify-center xl:justify-end">
-                <div className=' bg-[#040438] md:bg-[#0d1639b0] md:bg-opacity-80 rounded-3xl mx-2 mb-2 md:mx-8  pb-1 md:p-3 md:w-[75%]  max-w-[850px]'>
+                <div className=' bg-[#040438] md:bg-[#0d1639b0] md:bg-opacity-80 rounded-3xl mx-2 mb-2 md:mx-8  pb-1  md:w-[75%]  max-w-[850px]'>
                     <div className='flex justify-center py-4'>
                         <FontAwesomeIcon icon={faTrophy} className='text-white mx-1' />
                         <span className='text-white text-xs md:text-sm font-semibold ml-2'>
@@ -94,10 +95,11 @@ const Convercion = () => {
                             </div>
                         </div>
                         <p className="text-[#0094b3] text-center font-bold text-sm md:mb-4">Usar un cupóno código</p>
-                        <div className="flex justify-center py-2">
+                        <div className="flex justify-center py-2 align-text-bottom">
 
                             <span className="text-[#000f49] text-center font-bold text-sm">Ahorro promedio*</span>
-                            <FontAwesomeIcon icon={faPiggyBank} className=" h-5 mx-2" />
+                            {/* <FontAwesomeIcon icon={faPiggyBank} className=" h-5 mx-2" /> */}
+                            <Image src={pig} alt="pig" width={25} className="ml-1 mr-2" />
                             <span className="text-[#000f49] text-center font-bold text-sm">S/ 28.03</span>
                         </div>
                         <button className="bg-[#0024b3] text-white w-full rounded-xl py-4 md:my-2 font-bold">Iniciar seción</button>
