@@ -13,7 +13,7 @@ import PresentacionConvercion from "@/components/presentacion-convercion";
 export default function Home() {
   return (
     <div className="md:bg-transparent">
-      <div className="flex items-center justify-center h-auto my-20">
+      <div className="flex items-center justify-center h-auto  md:my-16">
         <div className="md:w-[80%] items-center">
           <PresentacionConvercion />
         </div>
