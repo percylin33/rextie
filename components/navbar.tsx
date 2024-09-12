@@ -20,7 +20,7 @@ const Navbar = () => {
     };
 
     return (<div>
-        <div className="hidden xl:block ml-40 ">
+        <div className="hidden xl:block ml-40 xl:ml-55 ">
             <ul className="flex  w-auto p-4 space-x-7  ">
                 <li
                     onClick={() => handleClick(0)}
