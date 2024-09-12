@@ -53,18 +53,25 @@ const Navbar = () => {
                     <div>
                         <div className=" flex space-x-4 ">
                             <div className="hidden xl:block">
-                                <div className="flex justify-center space-x-10 text-white font-bold text-xl   ">
+                                <div className="flex justify-center space-x-10 text-white font-bold text-xl relative">
                                     <p>Nosotros</p>
                                     <p>Blog</p>
-                                    <div>
+                                    <div className="relative">
                                         <div className="flex justify-between space-x-4" onClick={toggleServices}>
                                             <p>Servicios</p>
-                                            <FontAwesomeIcon icon={isServicesOpen ? faChevronUp : faChevronDown} className="pr-8 pt-1 text-orange-500 border-r-4 border-gray-500 hidden md:block    " />
+                                            <FontAwesomeIcon
+                                                icon={isServicesOpen ? faChevronUp : faChevronDown}
+                                                className="pr-8 pt-1 text-orange-500 border-r-4 border-gray-500 hidden md:block"
+                                            />
                                         </div>
-                                        <ul className={`  font-semibold  bg-[#eff2ff] text-[#000096] text-lg ${isServicesOpen ? 'block' : 'hidden'}`}>
-                                            <li>Factoring</li>
-                                            <li>visa</li>
-                                            <li>Empresas</li>
+                                        {/* Menú desplegable justo debajo de "Servicios" */}
+                                        <ul
+                                            className={`absolute left-0 top-full mt-2 font-semibold bg-[#eff2ff] text-[#000096] text-lg w-40 rounded-lg shadow-lg ${isServicesOpen ? 'block' : 'hidden'
+                                                }`}
+                                        >
+                                            <li className="px-4 py-2 hover:bg-[#d6e0ff]">Factoring</li>
+                                            <li className="px-4 py-2 hover:bg-[#d6e0ff]">Visa</li>
+                                            <li className="px-4 py-2 hover:bg-[#d6e0ff]">Empresas</li>
                                         </ul>
                                     </div>
                                 </div>
