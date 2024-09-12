@@ -36,7 +36,7 @@ const Convercion = () => {
     return (
         <div className=" xl:w-[50%]">
             <div className="flex justify-center xl:justify-end">
-                <div className=' bg-[#040438] md:bg-[#4f5672] md:bg-opacity-80 rounded-3xl mx-2 mb-2 md:mx-8  pb-1 md:p-3 md:w-[75%]  max-w-[850px]'>
+                <div className=' bg-[#040438] md:bg-[#0d1639b0] md:bg-opacity-80 rounded-3xl mx-2 mb-2 md:mx-8  pb-1 md:p-3 md:w-[75%]  max-w-[850px]'>
                     <div className='flex justify-center py-4'>
                         <FontAwesomeIcon icon={faTrophy} className='text-white mx-1' />
                         <span className='text-white text-xs md:text-sm font-semibold ml-2'>

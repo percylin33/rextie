@@ -2,6 +2,7 @@
 import Image from "next/image";
 import { useState } from "react";
 import logo1 from "@/public/logo1.png";
+import logo2 from "@/public/rex-2.png";
 import { faChevronDown, faChevronUp } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
@@ -20,27 +21,30 @@ const Navbar = () => {
 
     return (<div>
         <div className="hidden xl:block ml-20">
-                    <ul className="flex  w-auto p-4 space-x-7  ">
-                        <li
-                            onClick={() => handleClick(0)}
-                            className={` text-[#000096] font-extrabold text-lg  pb-0 cursor-pointer border-b-4 ${activeIndex === 0 ? 'border-orange-500 font-extrabold' : 'border-transparent'}`}
-                        >
-                            Personas
-                        </li>
-                        <li
-                            onClick={() => handleClick(1)}
-                            className={` text-[#000096] font-extrabold text-lg  pb-0 cursor-pointer border-b-4 ${activeIndex === 1 ? 'border-orange-500 font-extrabold' : 'border-transparent'}`}
-                        >
-                            Empresas
-                        </li>
-                    </ul>
-                </div>
-    
-        <nav className="bg-white p-4 relative" id='inicio'>
+            <ul className="flex  w-auto p-4 space-x-7  ">
+                <li
+                    onClick={() => handleClick(0)}
+                    className={` text-[#000096] font-extrabold text-lg  pb-0 cursor-pointer border-b-4 ${activeIndex === 0 ? 'border-orange-500 font-extrabold' : 'border-transparent'}`}
+                >
+                    Personas
+                </li>
+                <li
+                    onClick={() => handleClick(1)}
+                    className={` text-[#000096] font-extrabold text-lg  pb-0 cursor-pointer border-b-4 ${activeIndex === 1 ? 'border-orange-500 font-extrabold' : 'border-transparent'}`}
+                >
+                    Empresas
+                </li>
+            </ul>
+        </div>
+
+        <nav className="bg-transparent p-4 relative" id='inicio'>
             <div className="flex justify-between items-center">
                 {/* Imagen a la izquierda */}
-                <div className="flex-shrink-0 xl:ml-20">
-                    <Image src={logo1} alt="logo1" height={35}  className="xl:w-20"/>
+                <div className="flex-shrink-0 xl:ml-20 md:hidden">
+                    <Image src={logo1} alt="logo1" height={35} className="xl:w-20" />
+                </div>
+                <div className="flex-shrink-0 xl:ml-20 hidden md:block">
+                    <Image src={logo2} alt="logo1" height={35} className="xl:w-20" />
                 </div>
 
                 {/* Botones centrados */}
@@ -108,12 +112,12 @@ const Navbar = () => {
                 <div >
                     <div className="flex justify-between" onClick={toggleServices}>
                         <p
-                            
+
                             className="font-semibold text-[#000096] text-lg cursor-pointer ml-4 py-2"
                         >
                             Servicios
                         </p>
-                        <FontAwesomeIcon icon={isServicesOpen ? faChevronUp  : faChevronDown} className="pr-8 pt-1 text-orange-500" />
+                        <FontAwesomeIcon icon={isServicesOpen ? faChevronUp : faChevronDown} className="pr-8 pt-1 text-orange-500" />
                     </div>
                     <p className="border-b border-gray-300 last:border-b-0 "></p>
 
@@ -132,12 +136,12 @@ const Navbar = () => {
                             Visa
                             <span className="bg-orange-400 text-white text-xs font-semibold rounded-full px-2 py-1 ml-2">Nuevo</span>
                         </li>
-                        
+
                     </ul>
                 </div>
             </div>
         </nav>
-        </div>
+    </div>
     );
 };
 

@@ -50,8 +50,7 @@ const Footer = () => {
                             <li className="py-1"><p className="text-sm text-gray-500 font-semibold">Rextie Business</p></li>
                             <li className="py-1"><p className="text-sm text-gray-500 font-semibold">Rextie Factoring</p></li>
                             <li className="py-1"><p className="text-sm text-gray-500 font-semibold">Confirming</p></li>
-                            <li className=" py-2 flex items-center"><p className="text-sm text-gray-500 font-semibold">
-                            Visa</p>
+                            <li className=" py-2 flex items-center"><p className="text-sm text-gray-500 font-semibold">Visa</p>
                             <span className="bg-orange-400 text-white text-xs font-semibold rounded px-2 py-1 ml-2">Nuevo</span>
                         </li>
                         </ul>
@@ -77,7 +76,7 @@ const Footer = () => {
                             <li className="py-1"><p className="text-sm text-gray-500 font-semibold">App para cambiar dolares</p></li>
                             <li className="py-1"><p className="text-sm text-gray-500 font-semibold">Camio de Dolar a Soles</p></li>
                             <li className="py-1"><p className="text-sm text-gray-500 font-semibold">Precio de Dolar</p></li>
-                            <li className="py-1"><p className="text-sm text-gray-500 font-semibold">Dolar<p/></p></li>
+                            <li className="py-1"><p className="text-sm text-gray-500 font-semibold">Dolar</p></li>
                         </ul>
                     </div>
 
