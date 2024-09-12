@@ -27,12 +27,23 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        <Navbar />
-        {children}
-        <Footer />
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+        <div className="relative">
+          {/* Imagen de fondo con borde inferior diagonal */}
+          <div
+            className="hidden md:block absolute inset-0 bg-cover bg-center bg-no-repeat z-[-1] h-[900px] clip-path-diagonal"
+            style={{ backgroundImage: "url('/equipo.png')" }}
+          ></div>
+          
+          {/* Overlay azul semitransparente */}
+          <div className="hidden md:block absolute inset-0 bg-blue-900 opacity-90 z-[-1] h-[900px] clip-path-diagonal"></div>
+          
+          <Navbar />
+          <div>
+            {children}
+          </div>
+          <Footer />
+        </div>
       </body>
     </html>
   );
