@@ -20,48 +20,67 @@ const Navbar = () => {
     };
 
     return (<div>
-        <div className="hidden xl:block ml-20">
+        <div className="hidden xl:block ml-60 ">
             <ul className="flex  w-auto p-4 space-x-7  ">
                 <li
                     onClick={() => handleClick(0)}
-                    className={` text-[#000096] font-extrabold text-lg  pb-0 cursor-pointer border-b-4 ${activeIndex === 0 ? 'border-orange-500 font-extrabold' : 'border-transparent'}`}
+                    className={` text-white font-extrabold text-lg  pb-0 cursor-pointer border-b-4 ${activeIndex === 0 ? 'border-orange-500 font-extrabold' : 'border-transparent'}`}
                 >
                     Personas
                 </li>
                 <li
                     onClick={() => handleClick(1)}
-                    className={` text-[#000096] font-extrabold text-lg  pb-0 cursor-pointer border-b-4 ${activeIndex === 1 ? 'border-orange-500 font-extrabold' : 'border-transparent'}`}
+                    className={` text-white font-extrabold text-lg  pb-0 cursor-pointer border-b-4 ${activeIndex === 1 ? 'border-orange-500 font-extrabold' : 'border-transparent'}`}
                 >
                     Empresas
                 </li>
             </ul>
         </div>
-
-        <nav className="bg-transparent p-4 relative" id='inicio'>
+        <div className="flex justify-center">
+        <nav className="bg-transparent p-4 relative xl:w-[78%]" id='inicio'>
             <div className="flex justify-between items-center">
                 {/* Imagen a la izquierda */}
                 <div className="flex-shrink-0 xl:ml-20 md:hidden">
                     <Image src={logo1} alt="logo1" height={35} className="xl:w-20" />
                 </div>
                 <div className="flex-shrink-0 xl:ml-20 hidden md:block">
-                    <Image src={logo2} alt="logo1" height={35} className="xl:w-20" />
+                    <Image src={logo2} alt="logo1" height={35} className="xl:w-50 w-40" />
                 </div>
 
                 {/* Botones centrados */}
-                <div className=" md:flex space-x-4">
-                    <button className="text-black px-4 py-2 font-bold">Iniciar sesión</button>
-                    <button className="text-white bg-[#0032ff] px-4 py-2 rounded-xl font-semibold">Registrate</button>
-                </div>
+                <div>
+                    <div className=" flex space-x-4 ">
+                        <div className="hidden xl:block">
+                            <div className="flex justify-center space-x-10 text-white font-bold text-xl   ">
+                                <p>Nosotros</p>
+                                <p>Blog</p>
+                                <div>
+                                    <div className="flex justify-between space-x-4" onClick={toggleServices}>
+                                        <p>Servicios</p>
+                                        <FontAwesomeIcon icon={isServicesOpen ? faChevronUp : faChevronDown} className="pr-8 pt-1 text-orange-500 border-r-4 border-gray-500 hidden md:block    " />
+                                    </div>
+                                    <ul className={`  font-semibold  bg-[#eff2ff] text-[#000096] text-lg ${isServicesOpen ? 'block' : 'hidden'}`}>
+                                        <li>Factoring</li>
+                                        <li>visa</li>
+                                        <li>Empresas</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <button className="text-black md:text-white md:font-extrabold md:text-xl px-4 py-2 font-bold">Iniciar sesión</button>
+                        <button className="text-white bg-[#0024b3] px-4 py-2 rounded-xl font-semibold md:text-xl md:font-extrabold">Registrate</button>
+                        <div className="xl:hidden">
+                            <button
+                                onClick={() => setOpen(!open)}
+                                className="text-[#0024b3] text-2xl md:text-white"
+                            >
+                                &#9776; {/* Icono de menú hamburguesa */}
+                            </button>
 
-                {/* Menú hamburguesa a la derecha (solo móvil) */}
-                <div className="xl:hidden">
-                    <button
-                        onClick={() => setOpen(!open)}
-                        className="text-[#0024b3] text-2xl"
-                    >
-                        &#9776; {/* Icono de menú hamburguesa */}
-                    </button>
+                        </div>
+                    </div>
 
+                    {/* Menú hamburguesa a la derecha (solo móvil) */}
                 </div>
             </div>
 
@@ -141,6 +160,7 @@ const Navbar = () => {
                 </div>
             </div>
         </nav>
+        </div>
     </div>
     );
 };

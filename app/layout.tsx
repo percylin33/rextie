@@ -28,22 +28,30 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-        <div className="relative">
-          {/* Imagen de fondo con borde inferior diagonal */}
-          <div
-            className="hidden md:block absolute inset-0 bg-cover bg-center bg-no-repeat z-[-1] h-[900px] clip-path-diagonal"
-            style={{ backgroundImage: "url('/equipo.png')" }}
-          ></div>
-          
-          {/* Overlay azul semitransparente */}
-          <div className="hidden md:block absolute inset-0 bg-blue-900 opacity-90 z-[-1] h-[900px] clip-path-diagonal"></div>
-          
-          <Navbar />
-          <div>
-            {children}
-          </div>
-          <Footer />
-        </div>
+      <div className="relative">
+    {/* Imagen de fondo con borde inferior diagonal */}
+    <div
+        className="hidden md:block absolute inset-0 bg-cover bg-center bg-no-repeat z-[-1] h-[700px] clip-path-diagonal"
+        style={{ 
+            backgroundImage: "url('/equipo.png')",
+            backgroundBlendMode: "overlay",
+            backgroundColor: "rgba(0, 15, 74, 0.5)" // Color azul con opacidad
+        }}
+    >
+        {/* Gradiente de azul intenso a más suave */}
+        <div 
+            className="absolute inset-0 bg-gradient-to-r from-blue-950 to-blue-800 opacity-90"
+            style={{ backgroundBlendMode: "overlay" }}
+        />
+    </div>
+
+    {/* Resto del contenido */}
+    <Navbar />
+    <div>
+        {children}
+    </div>
+    <Footer />
+</div>
       </body>
     </html>
   );
