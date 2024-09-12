@@ -71,16 +71,16 @@ const CardCarousel: React.FC = () => {
           </div>
 
           {/* Vista en desktop (todas las cartas en fila) */}
-          <div className="hidden lg:grid lg:grid-cols-4 gap-8 w-[80%]">
+          <div className="hidden lg:grid lg:grid-cols-4 gap-8 w-[70%] lg:gap-2 ">
             {cards.map((card, index) => (
               <div
                 key={index}
-                className="border p-6 bg-[#eff2ff] border-[#828fc4] rounded flex flex-col justify-center items-center h-full lg:h-[500px]"
+                className="border p-6 bg-[#eff2ff] border-[#828fc4] rounded flex flex-col justify-center items-center h-full lg:h-[450px] lg:max-w-[300px]"
               >
                 <p className="mb-4 xl:text-2xl sm:text-lg font-semibold text-gray-600 flex-grow flex items-center justify-center">
                   {card.description}
                 </p>
-                <h3 className="text-lg font-bold mt-2 self-end">{card.title}</h3>
+                <h3 className="text-lg font-bold mt-2 self-center">{card.title}</h3>
               </div>
             ))}
           </div>

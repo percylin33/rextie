@@ -10,7 +10,7 @@ const Comentarios: NextPage<Props> = ({}) => {
             <p className='text-[#0032ff] py-8 font-extrabold text-3xl text-center'>Descubre lo que dicen nuestros clientes</p>
         </div>
         <div className='mb-6'>
-            <p className='text-center text-xs'>Conoce de primera mano lo que es cambiar dinero con Rextie.</p>
+            <p className='text-center text-xs lg:text-base'>Conoce de primera mano lo que es cambiar dinero con Rextie.</p>
         </div>
         <div >
             <CardComentario />
